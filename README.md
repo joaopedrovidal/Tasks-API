@@ -129,7 +129,7 @@ Siga o passo a passo:
 
 1. Clone o repositório
    ```bash
-   git clone https://github.com/joaopedrovidal/CRUD-tarefas.git
+   git clone https://github.com/joaopedrovidal/Tasks-API.git
    ```
 
 2. Abra o projeto em sua IDE.
