@@ -33,10 +33,7 @@ E a importação do CSV?
 Normalmente em uma API, a importação de um CSV acontece enviando o arquivo pela rota, por meio de outro formato, chamado multipart/form-data. Como esse desafio visa manter a implementação mais simples, você pode realizar essa funcionalidade por meio de um arquivo de script import-csv.js, por exemplo.
 
 Para realizar isso, utilize a lib 
-csv-parse
-, utilizando o exemplo de 
-iterador async
-.
+csv-parse, utilizando o exemplo de iterador async.
 
 Com a biblioteca instalada utilizando o gerenciador de pacotes de sua preferência, crie um arquivo a parte para realizar a leitura do arquivo CSV.
 
@@ -52,11 +49,20 @@ Task 04,Descrição da Task 04
 Task 05,Descrição da Task 05
 Recomendação de implementação
 Semelhante ao que foi feito no 
-stream-http-server.js
-, nas aulas, utilizando o for await, também é possível fazer com o parse da lib informada acima. (Lembre-se de pular a primeira linha do CSV)
+stream-http-server.js, nas aulas, utilizando o for await, também é possível fazer com o parse da lib informada acima. (Lembre-se de pular a primeira linha do CSV)
 
 Indo além
 Algumas sugestões do que pode ser implementado:
 
 Validar se as propriedades title e description das rotas POST e PUT estão presentes no body da requisição.
 Nas rotas que recebem o /:id, além de validar se o id existe no banco de dados, retornar a requisição com uma mensagem informando que o registro não existe.
+
+
+Como baixar e roda ro projeto
+
+1 - Realize o clone do projeto (git clone https://github.com/joaopedrovidal/CRUD-tarefas.git)
+2 - Abra dois terminais diferentes em sua IDE;
+3 - Execute npm install;
+4 - Execute npm run dev;
+5 - No outro temrinal, navegue até a pasta UTILS e execute node import-csv.js
+6 - Consuma todas as rotas da aplicação.
